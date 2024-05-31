@@ -1,0 +1,108 @@
+/* 
+Test Color Palette
+light bg - ebf5fe
+link - 0d395e
+hover - 0461cf
+h1 - 0461cf
+ */
+
+ :root {
+  --light-background-color: #ebf5fe;
+  --primary-color: #0461cf;
+  --secondary-color: #0d395e;
+  --text-color: #2b2b2b;
+  --white: #fff;
+  --accent-color: #cf2f77;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--light-background-color);
+  font-family: "Onest", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--text-color);
+  margin: 20px 30px;
+}
+
+@media only screen
+and (min-width : 1024px) {
+  .container {
+    width: 450px;
+  }
+}
+
+@media only screen
+and (max-width : 1024px) {
+  .container {
+    width: 300px;
+  }
+}
+.container {
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 40px;
+  background: var(--white);
+  border-radius: 5px;
+}
+
+form {
+  display: inline-block;
+}
+
+input {
+  padding: 4px 15px 4px 5px;
+}
+
+#button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 2px;
+  padding: 5px 15px;
+}
+
+#button:hover {
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+ol {
+  padding-left: 20px;
+  list-style: lower-roman;
+}
+
+ol li {
+  padding: 5px;
+}
+
+ol li:nth-child(even) {
+  background: var(--light-background-color);
+}
+
+.strike {
+  text-decoration: line-through;
+  color: var(--accent-color);
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+.delete {
+  display: none;
+}
+
+ol li button {
+  background: none;
+  border: none;
+  float: right;
+  color: var(--secondary-color);
+  font-weight: 800;
+}
